@@ -202,7 +202,7 @@ function updatePopupData(currentColor) {
 function handlePointClick(point, event) {
   event.preventDefault();
   const currentColor = point.getAttribute('fill');
-  const imageWrapperRect = document.querySelector('.image-wrapper').getBoundingClientRect();
+  const mapWrapperRect = document.querySelector('.map-wrapper').getBoundingClientRect();
 
   if (currentColor !== 'white' && currentColor !== '#1991E6') {
     const pointRect = point.getBoundingClientRect();
@@ -210,7 +210,7 @@ function handlePointClick(point, event) {
     if (comicPopup.style.display === 'block' && point === currentPoint) {
       comicPopup.style.display = 'none';
     } else {
-      const topPosition = pointRect.top - imageWrapperRect.top - comicPopup.offsetHeight - 10;
+      const topPosition = pointRect.top - mapWrapperRect.top - comicPopup.offsetHeight - 10;
       const minDistanceFromTop = 20;
 
       if (topPosition < 0) {
@@ -219,7 +219,7 @@ function handlePointClick(point, event) {
         comicPopup.style.top = topPosition + 'px';
       }
 
-      comicPopup.style.left = pointRect.left - imageWrapperRect.left + 'px';
+      comicPopup.style.left = pointRect.left - mapWrapperRect.left + 'px';
       comicPopup.style.display = 'block';
 
       currentPoint = point;
