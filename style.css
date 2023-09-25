@@ -81,7 +81,11 @@ body {
   }
 
   .table-wrapper {
-    gap: 25px;
+    gap: 30px;
+  }
+
+  .IP-block {
+    padding: 14px;
   }
 
   .IP-block-title {
