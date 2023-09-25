@@ -175,10 +175,8 @@ window.addEventListener('load', function () {
   updateEventsAndIPs();
 });
 
-// Обновлять случайные числа каждую секунду
 setInterval(updateRandomNumbers, 3000);
 
-// Обновлять числа и IP-адреса каждые 5 секунд
 setInterval(updateEventsAndIPs, 3000);
 
 
@@ -190,13 +188,11 @@ function updatePopupData(currentColor) {
 
   eventPopup.style.color = currentColor;
 
-  // Генерируем случайные значения
   const randomTime = getRandomInt(70, 150);
   const randomLatency = getRandomInt(-150000, -100000);
   const randomEvent = getRandomInt(1, 1);
   const randomIP = `${getRandomInt(0, 255)}.${getRandomInt(0, 255)}.${getRandomInt(0, 255)}.${getRandomInt(0, 255)}`;
 
-  // Обновляем текстовые элементы
   timePopup.textContent = randomTime;
   latencyPopup.textContent = randomLatency + "ms";
   eventPopup.textContent = ` +${randomEvent} `;

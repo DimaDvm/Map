@@ -4,7 +4,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.image-wrapper {
+.map-wrapper {
   position: relative;
   max-width: 1400px;
   margin: 0 auto;
@@ -20,7 +20,6 @@ body {
   font-weight: 400;
 }
 
-/* Большие экраны (шире 1200px) */
 @media (min-width: 1200px) {
   .info-block {
     max-height: 200px;
@@ -42,9 +41,21 @@ body {
   .map-event {
     line-height: 30px;
   }
+
+  .table-wrapper {
+    gap: 50px;
+  }
+
+  .IP-block {
+    padding: 20px;
+  }
+
+  .IP-block-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
 }
 
-/* Средние экраны (768px - 1199px) */
 @media (min-width: 768px) and (max-width: 1199px) {
   .info-block {
     max-height: 150px;
@@ -68,31 +79,44 @@ body {
     line-height: 20px;
     font-size: 12px;
   }
+
+  .table-wrapper {
+    gap: 25px;
+  }
+
+  .IP-block-title {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .IP-block-title {
+    margin-bottom: 10px;
+    font-size: 10px;
+  } 
 }
 
-/* Маленькие экраны (меньше 768px) */
 @media (max-width: 767px) {
   .info-block {
     max-height: 100px;
     max-width: 100px;
     padding: 5px;
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .date-block {
-    font-size: 10px;
+    font-size: 8px;
     margin-bottom: 5px;
   }
 
   .time-frame {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     line-height: 10px;
     font-size: 6px;
   }
 
   .map-event {
-    line-height: 10px;
-    font-size: 8px;
+    line-height: 11px;
+    font-size: 6px;
   }
 }
 
@@ -193,7 +217,6 @@ body {
 .table-wrapper {
   display: flex;
   flex-direction: row;
-  gap: 20px;
   justify-content: center;
   max-width: 100%;
   margin: 0 auto;
@@ -201,6 +224,11 @@ body {
 
 .IP-block {
   flex: 1;
-  height: 200px;
+  min-height: 50px;
+  max-height: 200px;
   background-color: #F5F5F5;
+}
+
+.IP-block-title {
+  color: #060840;
 }
