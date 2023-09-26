@@ -119,6 +119,13 @@ body {
 }
 
 @media (max-width: 739px) {
+  .image-map-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+  }
+
   .info-block {
     position: relative;
     height: 200px;
