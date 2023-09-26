@@ -57,7 +57,7 @@ body {
   }
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 740px) and (max-width: 1199px) {
   
   .info-block {
     max-height: 150px;
@@ -99,6 +99,43 @@ body {
     margin-bottom: 10px;
     font-size: 10px;
   } 
+}
+
+@media (max-width: 739px) {
+  .info-block {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: -80px auto 50px auto;
+    font-size: 14px;
+  }
+
+  .date-block {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .time-frame {
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+
+  .map-event {
+    line-height: 30px;
+  }
+
+  .table-wrapper {
+    gap: 50px;
+  }
+
+  .IP-block {
+    padding: 20px;
+  }
+
+  .IP-block-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
 }
 
 .date-block {
