@@ -4,10 +4,16 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.map-wrapper {
+.map-container {
   position: relative;
-  min-width: 740px;
-  max-width: 1400px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+
+.map-wrapper {
+  display: inline-block;
+  position: relative;
   margin: 0 auto;
   width: 100%;
 }
@@ -19,6 +25,21 @@ body {
   padding: 20px;
   background-color: rgb(25, 24, 24);
   font-weight: 400;
+}
+
+@media (min-width: 740px) {
+  .map-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .map-wrapper {
+    position: relative;
+    min-width: 740px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
