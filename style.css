@@ -39,6 +39,7 @@ body {
     min-width: 740px;
     max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -122,8 +123,11 @@ body {
     position: relative;
     height: 200px;
     width: 200px;
-    margin: -80px auto 50px auto;
     font-size: 14px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .date-block {
@@ -141,6 +145,7 @@ body {
   }
 
   .table-wrapper {
+    flex-direction: column;
     gap: 50px;
   }
 
